@@ -57,6 +57,10 @@ nav ul li a:hover, .active {
   font-size: 20px;
 }
 
+section {
+  padding: 40px 20px;
+}
+
 footer {
   background-color: #005b96; /* Dark Blue */
   color: white;
@@ -66,4 +70,20 @@ footer {
 
 footer p {
   margin: 5px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a {
+  color: #005b96;
+}
+
+a:hover {
+  text-decoration: underline;
 }
