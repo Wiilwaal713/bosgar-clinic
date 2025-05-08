@@ -1,89 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
+/* Styles for the Appointment Page */
+.appointment-section {
+  padding: 40px 20px;
   background-color: #f7f7f7;
-  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-header {
-  background-color: #005b96; /* Blue */
-  padding: 20px 0;
-}
-
-header h1 {
+.appointment-section h2 {
   text-align: center;
-  color: white;
+  margin-bottom: 30px;
+  font-size: 36px;
 }
 
-nav ul {
-  list-style-type: none;
-  text-align: center;
+.form-group {
+  margin-bottom: 20px;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
+.form-group label {
   font-size: 18px;
-  padding: 8px 15px;
+  display: block;
+  margin-bottom: 10px;
 }
 
-nav ul li a:hover, .active {
-  background-color: #007bb5;
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.hero {
-  background-color: #007bb5; /* Lighter Blue */
-  text-align: center;
-  padding: 80px 20px;
+.form-group button {
+  background-color: #005b96;
   color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
 }
 
-.hero h2 {
-  font-size: 40px;
-}
-
-.hero p {
-  font-size: 20px;
-}
-
-section {
-  padding: 40px 20px;
-}
-
-footer {
-  background-color: #005b96; /* Dark Blue */
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  margin: 10px 0;
-}
-
-a {
-  color: #005b96;
-}
-
-a:hover {
-  text-decoration: underline;
+.form-group button:hover {
+  background-color: #007bb5;
 }
