@@ -122,15 +122,3 @@ header h1 {
 .appointment-form button {
   margin-bottom: 40px;
 }
-#appointment h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-#appointment h2 {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-}
-h2#book-appointment {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
