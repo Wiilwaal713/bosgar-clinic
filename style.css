@@ -123,6 +123,6 @@ header h1 {
   margin-bottom: 40px;
 }
 #appointment h2 {
-  margin-top: 70px;  /* Space above the heading */
-  margin-bottom: 70px;  /* Space below the heading */
+  margin-top: 100px;  /* Space above the heading */
+  margin-bottom: 100px;  /* Space below the heading */
 }
