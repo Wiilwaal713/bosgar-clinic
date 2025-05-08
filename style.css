@@ -1,68 +1,69 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
 }
 
 header {
-  background: #222;
-  color: white;
-  padding: 20px;
+  background-color: #005b96; /* Blue */
+  padding: 20px 0;
+}
+
+header h1 {
   text-align: center;
+  color: white;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  list-style-type: none;
+  text-align: center;
 }
 
-nav a {
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+
+nav ul li a:hover, .active {
+  background-color: #007bb5;
+  border-radius: 5px;
 }
 
 .hero {
-  padding: 40px;
+  background-color: #007bb5; /* Lighter Blue */
   text-align: center;
-  background-color: #f4f4f4;
-}
-
-.form-section {
-  padding: 30px;
-  max-width: 600px;
-  margin: auto;
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-}
-
-form input, form select, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  margin-top: 20px;
-  padding: 10px 15px;
-  background: #008080;
+  padding: 80px 20px;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 20px;
 }
 
 footer {
-  background: #222;
+  background-color: #005b96; /* Dark Blue */
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 5px 0;
 }
