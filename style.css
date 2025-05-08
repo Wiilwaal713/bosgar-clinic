@@ -1,46 +1,55 @@
-/* Styles for the Appointment Page */
-.appointment-section {
-  padding: 40px 20px;
-  background-color: #f7f7f7;
-  max-width: 800px;
-  margin: 0 auto;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointment | Bosgar Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Bosgar Clinic</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html" class="active">Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-.appointment-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 36px;
-}
+  <section class="appointment-section">
+    <h2>Book an Appointment</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
 
-.form-group {
-  margin-bottom: 20px;
-}
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
 
-.form-group label {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 10px;
-}
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required />
 
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+      <label for="date">Preferred Appointment Date</label>
+      <input type="date" id="date" name="date" required />
 
-.form-group button {
-  background-color: #005b96;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
+      <label for="message">Additional Message</label>
+      <textarea id="message" name="message" placeholder="Any additional details or questions" rows="4"></textarea>
 
-.form-group button:hover {
-  background-color: #007bb5;
-}
+      <button type="submit">Book Appointment</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Bosgar Clinic. All rights reserved.</p>
+      <p>Address: C. COAHULA 7110 ZONA NTE TIJUANA B.C. Mexico</p>
+      <p>Phone: +1 (612) 608-0723 | Email: bosgarclinic@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>
