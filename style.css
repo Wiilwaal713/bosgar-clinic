@@ -1,93 +1,89 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   color: #333;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
 header {
-  background-color: #005b96;
-  color: white;
+  background-color: #005b96; /* Blue */
   padding: 20px 0;
 }
 
 header h1 {
-  margin: 0;
-  padding-left: 10px;
+  text-align: center;
+  color: white;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
-  gap: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 15px;
 }
 
-nav ul li a.active {
-  text-decoration: underline;
+nav ul li a:hover, .active {
+  background-color: #007bb5;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #007bb5; /* Lighter Blue */
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 20px;
 }
 
 section {
-  padding: 40px 0;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Appointment form styling */
-.appointment-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.appointment-section input,
-.appointment-section textarea {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.appointment-section button {
-  padding: 12px;
-  font-size: 16px;
-  background-color: #005b96;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.appointment-section button:hover {
-  background-color: #007bb5;
+  padding: 40px 20px;
 }
 
 footer {
-  background-color: #005b96;
+  background-color: #005b96; /* Dark Blue */
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 20px 0;
 }
 
-.footer-content p {
+footer p {
   margin: 5px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a {
+  color: #005b96;
+}
+
+a:hover {
+  text-decoration: underline;
 }
