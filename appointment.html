@@ -22,34 +22,27 @@
     </div>
   </header>
 
-  <section class="form-section">
+  <main class="container">
     <h2>Book an Appointment</h2>
-    <form action="https://formspree.io/f/your-id" method="POST">
-      <label for="name">Full Name:</label>
+    <form class="appointment-form">
+      <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
+      <label for="email">Email</label>
       <input type="email" id="email" name="email" required />
 
-      <label for="phone">Phone:</label>
+      <label for="phone">Phone</label>
       <input type="tel" id="phone" name="phone" required />
 
-      <label for="procedure">Procedure:</label>
-      <select id="procedure" name="procedure">
-        <option value="FUE">FUE Hair Transplant</option>
-        <option value="DHI">DHI Hair Transplant</option>
-        <option value="PRP">PRP Therapy</option>
-      </select>
-
-      <label for="date">Preferred Date:</label>
+      <label for="date">Preferred Date</label>
       <input type="date" id="date" name="date" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Book Appointment</button>
     </form>
-  </section>
+  </main>
 
   <footer>
     <div class="footer-content">
