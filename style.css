@@ -119,3 +119,6 @@ a:hover {
 header h1 {
   margin-bottom: 20px;
 }
+.appointment-form button {
+  margin-bottom: 40px;
+}
