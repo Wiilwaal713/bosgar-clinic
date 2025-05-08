@@ -116,3 +116,6 @@ a:hover {
 .appointment-form button:hover {
   background-color: #007bb5;
 }
+header h1 {
+  margin-bottom: 20px;
+}
