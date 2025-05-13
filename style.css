@@ -840,3 +840,49 @@ header h1 {
     max-width: 100%;
   }
 }
+.clinic-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.highlight-item {
+  width: calc(50% - 20px); /* Adjusts for two items per row with proper spacing */
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.highlight-item img {
+  width: 60px; /* Slightly bigger image for better visibility */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 1.2rem;
+  margin: 6px 0;
+  color: #222;
+}
+
+.highlight-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 600px) {
+  .highlight-item {
+    width: calc(100% - 20px); /* Stacks the items vertically on mobile */
+  }
+}
