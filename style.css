@@ -281,3 +281,44 @@ header h1 {
   font-size: 0.95em;
   color: #666;
 }
+.experience-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.experience-item {
+  flex: 1 1 22%; /* Adjust the percentage to fit the design */
+  max-width: 250px; /* Set a max-width for each item */
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.experience-item img {
+  width: 80px; /* Adjust size of icons */
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 14px; /* Adjust text size */
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .experience-item {
+    flex: 1 1 45%; /* For medium screens like tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-item {
+    flex: 1 1 100%; /* For small screens like phones */
+    max-width: 100%; /* Ensure no overflow */
+  }
+}
