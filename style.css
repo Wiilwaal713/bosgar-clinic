@@ -324,3 +324,47 @@ header h1 {
     max-width: 45%;
   }
 }
+.clinic-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.highlight-item {
+  transition: transform 0.3s ease;
+}
+
+.highlight-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.highlight-item h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.highlight-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.highlight-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Mobile responsiveness: two by two */
+@media (max-width: 768px) {
+  .clinic-highlights {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .highlight-item img {
+    width: 60px;
+    height: 60px;
+  }
+}
