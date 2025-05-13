@@ -375,3 +375,67 @@ header h1 {
     height: 60px;
   }
 }
+.clinic-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  text-align: center;
+  padding: 30px 15px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.highlight-item {
+  transition: transform 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.highlight-item img {
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  white-space: normal;
+}
+
+.highlight-item p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 5px;
+  word-break: break-word;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Optional: Larger layout for tablets/desktops */
+@media (min-width: 768px) {
+  .clinic-highlights {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .highlight-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .highlight-item h3 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .clinic-highlights {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
