@@ -491,3 +491,54 @@ header h1 {
     flex: 1 1 100%; /* Stacks to a single column on very small screens */
   }
 }
+.clinic-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.highlight-item {
+  width: calc(50% - 10px); /* Ensure two items per row with a gap */
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.highlight-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.highlight-item p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 5px;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .highlight-item {
+    width: calc(50% - 10px); /* Ensure two items per row on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-item {
+    width: calc(50% - 10px); /* Ensure two items per row on small mobile screens */
+  }
+}
