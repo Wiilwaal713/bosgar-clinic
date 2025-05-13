@@ -542,3 +542,56 @@ header h1 {
     width: calc(50% - 10px); /* Ensure two items per row on small mobile screens */
   }
 }
+.clinic-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.highlight-item {
+  width: calc(50% - 10px); /* 2 items per row, with some space between */
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.highlight-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.highlight-item p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 5px;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Tablet screen responsiveness */
+@media (max-width: 768px) {
+  .highlight-item {
+    width: calc(50% - 10px); /* Keep 2 items per row on tablet */
+  }
+}
+
+/* Mobile screen responsiveness */
+@media (max-width: 480px) {
+  .highlight-item {
+    width: calc(50% - 10px); /* Keep 2 items per row on mobile */
+  }
+}
