@@ -291,34 +291,47 @@ header h1 {
 }
 
 .experience-item {
-  flex: 1 1 22%; /* Adjust the percentage to fit the design */
-  max-width: 250px; /* Set a max-width for each item */
+  flex: 1 1 22%; /* Each item takes up 22% width */
+  max-width: 250px; /* Max width for each item */
   text-align: center;
   margin: 10px;
   box-sizing: border-box;
 }
 
 .experience-item img {
-  width: 80px; /* Adjust size of icons */
+  width: 80px; /* Adjust icon size */
   height: 80px;
   margin-bottom: 10px;
 }
 
 .experience-item p {
-  font-size: 14px; /* Adjust text size */
+  font-size: 14px;
   color: #333;
 }
 
-/* Responsive design */
+/* Media Queries to make it mobile responsive */
 @media (max-width: 768px) {
   .experience-item {
-    flex: 1 1 45%; /* For medium screens like tablets */
+    flex: 1 1 45%; /* On medium screens (like tablets) make it 45% width */
   }
 }
 
 @media (max-width: 480px) {
   .experience-item {
-    flex: 1 1 100%; /* For small screens like phones */
-    max-width: 100%; /* Ensure no overflow */
+    flex: 1 1 100%; /* For small screens, let each item take up full width */
+    max-width: 100%; /* Prevent overflow */
+  }
+
+  .experience-section {
+    padding: 10px; /* Add some space around for mobile */
+  }
+
+  .experience-item img {
+    width: 60px; /* Slightly smaller icons for mobile */
+    height: 60px;
+  }
+
+  .experience-item p {
+    font-size: 12px; /* Slightly smaller text on mobile */
   }
 }
