@@ -439,3 +439,55 @@ header h1 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.clinic-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.highlight-item {
+  flex: 1 1 45%; /* Take up 45% of the width */
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  max-width: 48%; /* Prevent stretching */
+}
+
+.highlight-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.highlight-item p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 5px;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .highlight-item {
+    flex: 1 1 48%; /* Adjust the size to fit in two columns on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-item {
+    flex: 1 1 100%; /* Stacks to a single column on very small screens */
+  }
+}
