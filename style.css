@@ -886,3 +886,40 @@ header h1 {
     width: calc(100% - 20px); /* Stacks the items vertically on mobile */
   }
 }
+.clinic-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.highlight-item {
+  width: calc(50% - 20px); /* Two items per row with space between */
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.highlight-item img {
+  width: 50px; /* Fixed size for icons */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.highlight-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* For mobile */
+@media (max-width: 600px) {
+  .highlight-item {
+    width: 100%; /* Stack items on small screens */
+  }
+}
