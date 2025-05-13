@@ -800,7 +800,7 @@ header h1 {
   padding: 16px;
   margin: 0 auto;
   max-width: 100%;
-  box-sizing: border-box;
+  box-sizing: 16px;
   gap: 16px;
 }
 
@@ -811,7 +811,7 @@ header h1 {
   padding: 12px;
   border-radius: 10px;
   text-align: center;
-  box-sizing: border-box;
+  box-sizing: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -834,7 +834,7 @@ header h1 {
   line-height: 1.3;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .highlight-item {
     flex: 1 1 100%;
     max-width: 100%;
