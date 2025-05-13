@@ -677,3 +677,37 @@ header h1 {
     flex: 1 1 calc(50% - 20px);
   }
   }
+.clinic-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.highlight-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.highlight-item img {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 1
+  @media (max-width: 400px) {
+  .highlight-item img {
+    max-width: 50px;
+  }
+
+  .highlight-item p {
+    font-size: 0.9rem;
+  }
+    }
